@@ -8,9 +8,30 @@
     <link rel="stylesheet" href="snake.css">
 </head>
 <body>
+    <div>Use arrow buttons to move, space to pause, 's' to step.</div>
     <div><p>Score: <span class="score">0</span></p></div>
     
-    <div><canvas id="gameCanvas"></canvas></div>
+    <div class="game-container">
+        <div>Y</div>
+        <div class = "game-vertical">
+            <p>X</p>
+            <canvas id="gameCanvas"></canvas>
+            <form>
+                <input type="checkbox" id="pause"/>
+                <label for="pause">Pause</label>
+                <br>
+                <input type="checkbox" id="showVariables" onclick="onShowVariablesChange()"/>
+                <label for="showVariables">Show Variables</label>
+            </form>
+        </div>
+        <div>
+            <div class="variables" id="variables">
+                <p>Direction: <span class="snake-direction">NONE</span></p>
+                <p>Head: <span class="snake-head">[0, 0]</span></p>
+                <p>Food: <span class="snake-food">[0, 0]</span></p>
+            </div>
+        </div>
+    </div>
     
     <script src="snake.js"></script>
 </body>

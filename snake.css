@@ -9,7 +9,20 @@ body {
     color: #fff;
 }
 
-canvas {
-    border: 1px solid #fff;
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
 }
 
+.game-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
